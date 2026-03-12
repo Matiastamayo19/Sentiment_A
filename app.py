@@ -42,11 +42,11 @@ with st.expander('Analizar texto'):
             st.lottie(animation,width =350)
         elif x >=-1 and x <= 0:
             st.write( 'Es un sentimiento Negativo 😔')
-            with open ('Neutral face.json') as source:
+            with open ('Sad animation.json') as source:
               animation=json.load(source)
             st.lottie(animation,width =350)
         else:
             st.write( 'Es un sentimiento Neutral 😐')
-            with open ('Sad animation.json') as source:
+            with open ('Neutral face.json') as source:
               animation=json.load(source)
             st.lottie(animation,width =350)
